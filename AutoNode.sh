@@ -58,6 +58,7 @@ touch $config
 echo "listen=1" > $config
 echo "server=1" >> $config
 echo "daemon=1" >> $config
+echo "txindex=1" > $config
 echo "port=4319" >> $config
 echo "rpcport=4320" >> $config
 echo "rpcallowip=*" >> $config
