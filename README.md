@@ -7,7 +7,7 @@ http://www.speccoin.com
 - Copyright (c) 2015-Present SPEC Developers
 - Copyright (c) 2015-Present CryptoWatcher Developers
 
-![Coin Image](/images/Spec256.png?raw=true "SPEC 256") ![Coin Image](/images/SpecDev256.png?raw=true "SPEC Dev 256") ![Coin Image](/images/SpecBip256.png?raw=true "SPEC Bip 256")
+![Coin Image](/images/Spec180.png?raw=true "SPEC 180") ![Coin Image](/images/SpecBip180.png?raw=true "SPEC Bip 180") ![Coin Image](/images/SpecDev180.png?raw=true "SPEC Dev 180")
 
 What is SPEC?
 ----------------
