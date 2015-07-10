@@ -14,7 +14,7 @@ sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev lib
 ####Install Firewall####
 echo "########### Firewall rules; allow 22,4320"
 sudo apt-get install ufw -y
-sudo ufw allow 80
+sudo ufw allow 80/tcp
 sudo ufw allow 22/tcp
 sudo ufw allow 4319/tcp
 sudo ufw allow 4320/tcp
