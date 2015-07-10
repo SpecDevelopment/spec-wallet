@@ -17,8 +17,8 @@ sudo apt-get install ufw -y
 sudo ufw allow ssh
 sudo ufw allow ftp
 sudo ufw allow www
-sudo ufw allow 4320/tcp
 sudo ufw allow 4319/tcp
+sudo ufw allow 4320/tcp
 sudo ufw --force enable
 #
 ####Install PHP5####
