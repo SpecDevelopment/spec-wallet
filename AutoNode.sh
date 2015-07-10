@@ -32,7 +32,7 @@ sudo apache2ctl restart
 #
 ####Create Swap File####
 echo "########### Creating Swap..."
-sudo dd if=/dev/zero of=/swapfile bs=1M count=256
+sudo dd if=/dev/zero of=/swapfile bs=1M count=512
 sudo mkswap /swapfile
 sudo swapon /swapfile
 echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
