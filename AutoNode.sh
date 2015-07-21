@@ -55,12 +55,12 @@ echo "########### Creating config..."
 cd ~
 config=".spec/spec.conf"
 touch $config
+echo "txindex=1" > $config
 echo "listen=1" > $config
 echo "server=1" >> $config
 echo "daemon=1" >> $config
 echo "port=4319" >> $config
 echo "rpcport=4320" >> $config
-echo "rpcallowip=*" >> $config
 echo "maxconnections=80" >> $config
 randUser=`< /dev/urandom tr -dc A-Za-z0-9 | head -c30`
 randPass=`< /dev/urandom tr -dc A-Za-z0-9 | head -c30`
