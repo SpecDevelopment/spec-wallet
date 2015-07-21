@@ -55,7 +55,6 @@ echo "########### Creating config..."
 cd ~
 config=".spec/spec.conf"
 touch $config
-echo "txindex=1" > $config
 echo "listen=1" > $config
 echo "server=1" >> $config
 echo "daemon=1" >> $config
