@@ -14,10 +14,10 @@ sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev lib
 ####Install Firewall####
 echo "########### Firewall rules; allow 22,4320"
 sudo apt-get install ufw -y
-sudo ufw allow 4320/tcp
-sudo ufw allow 4319/tcp
+sudo ufw allow 80/tcp
 sudo ufw allow 22/tcp
-sudo ufw allow 80
+sudo ufw allow 4319/tcp
+sudo ufw allow 4320/tcp
 sudo ufw --force enable
 #
 ####Install PHP5####
@@ -32,7 +32,7 @@ sudo apache2ctl restart
 #
 ####Create Swap File####
 echo "########### Creating Swap..."
-sudo dd if=/dev/zero of=/swapfile bs=1M count=256
+sudo dd if=/dev/zero of=/swapfile bs=1M count=512
 sudo mkswap /swapfile
 sudo swapon /swapfile
 echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
@@ -58,10 +58,8 @@ touch $config
 echo "listen=1" > $config
 echo "server=1" >> $config
 echo "daemon=1" >> $config
-echo "txindex=1" > $config
 echo "port=4319" >> $config
 echo "rpcport=4320" >> $config
-echo "rpcallowip=*" >> $config
 echo "maxconnections=80" >> $config
 randUser=`< /dev/urandom tr -dc A-Za-z0-9 | head -c30`
 randPass=`< /dev/urandom tr -dc A-Za-z0-9 | head -c30`
