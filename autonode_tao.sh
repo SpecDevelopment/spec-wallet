@@ -5,15 +5,15 @@ cd ~
 #
 ####Update Server####
 echo "########### Updating Ubuntu..."
-sudo apt-get update --force-yes -y
-sudo apt-get upgrade --force-yes -y
-sudo apt-get install software-properties-common python-software-properties autotools-dev autoconf --force-yes -y
-sudo apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git libssl1.0.0-dbg libtool --force-yes -y
-sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc8 libevent-dev libcrypto++-dev libgmp3-dev --force-yes -y
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install software-properties-common python-software-properties autotools-dev autoconf -y
+sudo apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git libssl1.0.0-dbg libtool -y
+sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc8 libevent-dev libcrypto++-dev libgmp3-dev -y
 #
 ####Install Firewall####
 echo "########### Firewall rules; allow 22,15150"
-sudo apt-get install ufw --force-yes -y
+sudo apt-get install ufw -y
 sudo ufw allow 80/tcp
 sudo ufw allow 22/tcp
 sudo ufw allow 15150/tcp
@@ -30,7 +30,7 @@ echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
 ####Clone TAO Github - Build levedb####
 echo "########### Adding ppa:taoblockchain/tao-core and building leveldb"
 sudo mkdir ~/.Tao/
-sudo apt-get install git --force-yes -y
+sudo apt-get install git -y
 git clone https://github.com/taoblockchain/tao-core
 cd tao-core/src/leveldb
 chmod 755 build_detect_platform
