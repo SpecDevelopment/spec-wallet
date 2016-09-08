@@ -74,5 +74,5 @@ crontab tempcron
 rm tempcron
 echo "########### Thanks to Max Kaye."
 echo "########### Modified by SPEC Dev Team dev@speccoin.com"
-echo "Rebooting..."
+echo "Rebooting.."
 reboot
